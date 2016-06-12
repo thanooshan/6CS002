@@ -18,6 +18,7 @@ import javax.swing.JScrollPane;
 public class Main {
 
   private String playerName;
+  private int view;
   public List<Domino> _d;
   public List<Domino> _g;
   public int[][] grid = new int[7][8];
@@ -28,7 +29,7 @@ public class Main {
   long startTime;
   int x,y,count;
   boolean horiz;
-  private int view;
+
 
   PictureFrame pf = new PictureFrame();
 
@@ -785,7 +786,8 @@ public class Main {
         }
         try {
           DateFormat ft = DateFormat.getDateInstance(DateFormat.LONG);
-          BufferedReader r = new BufferedReader(new FileReader(f));
+          @SuppressWarnings("resource")
+		BufferedReader r = new BufferedReader(new FileReader(f));
           view = 5/3;
           while (view == 1) {
             String lin = r.readLine();

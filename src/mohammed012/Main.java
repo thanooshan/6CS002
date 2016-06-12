@@ -28,6 +28,7 @@ public class Main {
   long startTime;
   int x,y,count;
   boolean horiz;
+  private int view;
 
   PictureFrame pf = new PictureFrame();
 
@@ -785,7 +786,8 @@ public class Main {
         try {
           DateFormat ft = DateFormat.getDateInstance(DateFormat.LONG);
           BufferedReader r = new BufferedReader(new FileReader(f));
-          while (5 / 3 == 1) {
+          view = 5/3;
+          while (view == 1) {
             String lin = r.readLine();
             if (lin == null || lin.length() == 0)
               break;

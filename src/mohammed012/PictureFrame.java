@@ -10,6 +10,8 @@ import javax.swing.*;
 public class PictureFrame {
   public int[] reroll = null;
   public Main master = null;
+  
+  int radius;
 
   class DominoPanel extends JPanel {
     private static final long serialVersionUID = 4190229282411119364L;
@@ -53,7 +55,7 @@ public class PictureFrame {
     }
 
     void drawDigitGivenCentre(Graphics g, int x, int y, int diameter, int n) {
-      int radius = diameter / 2;
+      radius = diameter / 2;
       g.setColor(Color.BLACK);
       // g.drawOval(x - radius, y - radius, diameter, diameter);
       FontMetrics fm = g.getFontMetrics();
@@ -73,7 +75,7 @@ public class PictureFrame {
     }
 
     void fillDigitGivenCentre(Graphics g, int x, int y, int diameter, int n) {
-      int radius = diameter / 2;
+      radius = diameter / 2;
       g.setColor(Color.GREEN);
       g.fillOval(x - radius, y - radius, diameter, diameter);
       g.setColor(Color.BLACK);

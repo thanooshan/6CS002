@@ -27,6 +27,7 @@ public class Main {
   int score;
   long startTime;
   int x,y,count;
+  boolean horiz;
 
   PictureFrame pf = new PictureFrame();
 
@@ -458,7 +459,7 @@ public class Main {
             x--;
             y--;
             System.out.println("Horizontal or Vertical (H or V)?");
-            boolean horiz;
+          
             int y2,
             x2;
             Location lotion;

@@ -3,7 +3,7 @@ import java.awt.*;
 
 import javax.swing.*;
 /**
- * @author Kevan Buckley, maintained by Amjad Mohammed
+ * @author Kevan Buckley, maintained by Thanooshan
  * @version 2.0, 2014
  */
 
@@ -66,7 +66,7 @@ public class PictureFrame {
 
     void drawDigitGivenCentre(Graphics g, int x, int y, int diameter, int n,
         Color c) {
-      int radius = diameter / 2;
+      radius = diameter / 2;
       g.setColor(c);
       // g.drawOval(x - radius, y - radius, diameter, diameter);
       FontMetrics fm = g.getFontMetrics();
@@ -89,16 +89,6 @@ public class PictureFrame {
       g.setColor(Color.YELLOW);
       g.fillRect(0, 0, getWidth(), getHeight());
 
-      // numbaz(g);
-      //
-      // if (master!=null && master.orig != null) {
-      // drawRoll(g, master.orig);
-      // }
-      // if (reroll != null) {
-      // drawReroll(g, reroll);
-      // }
-      //
-      // drawGrid(g);
       Location l = new Location(1,2);
 
       if (master.mode == 1) {

@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.JScrollPane;
 
 /**
- * @author Kevan Buckley, maintained by Amjad Mohammed
+ * @author Kevan Buckley, maintained by Thanooshan
  * @version 2.0, 2014
  */
 
@@ -27,7 +27,7 @@ public class Main {
   int cf;
   int score;
   long startTime;
-  int x,y,count;
+  int x,y,count,bonus = 0;
   boolean horiz;
 
 
@@ -743,7 +743,7 @@ public class Main {
           e.printStackTrace();
         }
         int gap = (int) (now - startTime);
-        int bonus = 60000 - gap;
+        bonus = 60000 - gap;
         score += bonus > 0 ? bonus / 1000 : 0;
         recordTheScore();
         System.out.println("Here is the solution:");
